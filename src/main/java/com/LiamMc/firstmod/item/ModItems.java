@@ -14,7 +14,7 @@ public class ModItems {
 
     //add first item
     public static final RegistryObject<Item> AMETHYST = ITEMS.register("amethyst",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.FIRSTMOD_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
