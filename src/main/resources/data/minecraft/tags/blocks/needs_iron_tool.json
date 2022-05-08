@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "firstmod:amethyst_ore"
+    "firstmod:amethyst_ore",
+    "firstmod:block_of_amethyst"
   ]
 }

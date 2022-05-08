@@ -8,6 +8,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
@@ -26,6 +27,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> AMETHYST_ORE = registerBlock("amethyst_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> BLOCK_OF_AMETHYST = registerBlock("block_of_amethyst",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
     //BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops())
     //
     //    public static final RegistryObject<Block> AMETHYST_ORE = BLOCKS.register("amethyst_ore", () ->
